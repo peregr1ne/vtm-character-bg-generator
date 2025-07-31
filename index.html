@@ -4,59 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VTM Character's Background Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="wrapper">
-      <header><h1>Welcome to Character's BG Gen</h1></header>
-      <main>
-        <div class="container">
-          <div class="form-window">
-            <form>
-              <input
-                type="text"
-                placeholder="Enter your chacter's name"
-                autofocus
-                required
-                autocomplete="off"
-              />
-              <input type="submit" />
-            </form>
+      <header>
+        <h1>
+          Welcome to <br />
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/170/278/original/VampireLogoBIG_1__06447_1.png?1752329142"
+            alt="VTM_logo"
+          /><br />Character's Story Background Generator
+        </h1>
+      </header>
+      <div class="app-screen">
+        <main>
+          <div class="container">
+            <div class="form-window">
+              <form>
+                <input
+                  type="text"
+                  placeholder="Enter your chacter's name"
+                  autofocus
+                  required
+                  autocomplete="off"
+                  class="request-input"
+                />
+                <input type="submit" class="request-button" />
+              </form>
+            </div>
+            <div class="generated-answer">THE STORY</div>
+            <div class="details">
+              <p class="details">
+                This project was coded by
+                <a
+                  href="https://www.linkedin.com/in/ellinafaust/"
+                  target="_blank"
+                  >Lynn Peregrine Faust</a
+                >
+                and is open sourced
+                <a
+                  href="https://github.com/peregr1ne/vtm-character-bg-generator"
+                  target="_blank"
+                >
+                  on GitHub</a
+                >
+                and
+                <a
+                  href="https://vtm-charbackground-generator.netlify.app/"
+                  target="_blank"
+                  >hosted on Netlify</a
+                >
+              </p>
+            </div>
           </div>
-          <div class="generated-answer">THE STORY</div>
-          <div class="details">
-            <p class="details">
-              This project was coded by
-              <a href="https://www.linkedin.com/in/ellinafaust/" target="_blank"
-                >Lynn Peregrine Faust</a
-              >
-              and is open sourced
-              <a
-                href="https://github.com/peregr1ne/vtm-character-bg-generator"
-                target="_blank"
-              >
-                on GitHub</a
-              >
-              and
-              <a
-                href="https://vtm-charbackground-generator.netlify.app/"
-                target="_blank"
-                >hosted on Netlify</a
-              >
-            </p>
+        </main>
+      </div>
+      <footer>
+        <div class="footer-text">
+          <div>© WHITE WOLF ENTERTAINMENT, AB</div>
+          All rights belong to their rightful owners. White Wolf, Vampire: The
+          Masquerade, and the World of Darkness are registered trademarks of
+          White Wolf Entertainment AB.
+          <div>
+            For more info visit white wolf entertainment online at
+            <a href="www.white-wolf.com">www.white-wolf.com</a> and
+            <a href="www.worldofdarkness.com">www.worldofdarkness.com</a>
           </div>
         </div>
-      </main>
-
-      <footer>
-        <p>
-          © WHITE WOLF ENTERTAINMENT, AB All rights belong to their rightful
-          owners. White Wolf, Vampire: The Masquerade, and the World of Darkness
-          are registered trademarks of White Wolf Entertainment AB. For more
-          info visit white wolf entertainment online at
-          <a href="www.white-wolf.com">www.white-wolf.com</a> and
-          <a href="www.worldofdarkness.com">www.worldofdarkness.com</a>
-        </p>
       </footer>
     </div>
   </body>
