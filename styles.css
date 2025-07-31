@@ -26,7 +26,7 @@ body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/455/original/%E2%80%94Pngtree%E2%80%94misty_smoke_abstract_black_mist_8642156.png?1753966085);
   background-size: 100%;
   background-repeat: no-repeat;
-  top: 1%;
+  /* top: 1%; */
   /* right: 0; */
 }
 
@@ -49,7 +49,7 @@ header h1 {
   position: relative;
   justify-content: center;
   background-color: #17070794;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 740px;
   border-radius: 3px;
   padding: 30px 30px 10px 30px;
@@ -116,7 +116,7 @@ input::placeholder {
   border: 1px solid #bf44444d;
   border-radius: 4px;
   height: 250px;
-  overflow: scroll;
+  overflow-y: scroll;
   isolation: isolate;
   padding: 10px;
   text-align: justify;
