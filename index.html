@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VTM Character's Background Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,20 +31,18 @@
       <div class="app-screen">
         <main>
           <div class="container">
-            <div class="form-window">
-              <form>
-                <input
-                  type="text"
-                  placeholder="Enter your chacter's name"
-                  autofocus
-                  required
-                  autocomplete="off"
-                  class="request-input"
-                />
-                <input type="submit" class="request-button" />
-              </form>
-            </div>
-            <div class="generated-answer">THE STORY</div>
+            <form id="generator-form">
+              <input
+                type="text"
+                placeholder="Enter your chacter's name"
+                autofocus
+                required
+                autocomplete="off"
+                class="request-input"
+              />
+              <input type="submit" class="request-button" id="request-button" />
+            </form>
+            <div class="generated-answer" id="story"></div>
             <div class="details">
               <p class="details">
                 This project was coded by
@@ -84,5 +83,6 @@
         </div>
       </footer>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
