@@ -10,10 +10,11 @@ body {
 
 .wrapper {
   background: linear-gradient(#5e1416, #150405);
-  /* height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: space-between;
 }
 
 .wrapper::before {
@@ -120,6 +121,12 @@ input::placeholder {
   isolation: isolate;
   padding: 10px;
   text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .details {
@@ -128,6 +135,7 @@ input::placeholder {
   font-weight: 300;
   line-height: 24px;
   text-align: center;
+  margin-top: 10px;
 }
 
 .details a {
@@ -158,4 +166,66 @@ footer {
 footer a {
   color: #fbf8f5;
   text-decoration: none;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  animation: pulse 1s linear infinite;
+  margin-right: 10px;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+@keyframes pulse {
+  0%,
+  60%,
+  100% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

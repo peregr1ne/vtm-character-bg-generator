@@ -17,6 +17,9 @@ function generateStory(event) {
       delay: 15,
     });
   });
+  let storyElement = document.querySelector("#story");
+  storyElement.classList.remove("hidden");
+  storyElement.innerHTML = `<span class="loader"></span><span class="generating">Generating ${char}'s breathtaking story...</span>`;
 }
 
 let generatorFormElement = document.querySelector("#generator-form");
