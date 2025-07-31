@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Didact Gothic";
+}
+
+.wrapper {
+  background: linear-gradient(#5e1416, #150405);
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper::before {
+  position: absolute;
+  display: block;
+  content: "";
+  opacity: 0.4;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/455/original/%E2%80%94Pngtree%E2%80%94misty_smoke_abstract_black_mist_8642156.png?1753966085);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  top: 1%;
+  /* right: 0; */
+}
+
+header {
+  padding: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  color: #fbf8f5;
+  letter-spacing: 5px;
+}
+
+.app-screen {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  background-color: #17070794;
+  overflow: hidden;
+  width: 740px;
+  border-radius: 3px;
+  padding: 30px 30px 10px 30px;
+  backdrop-filter: blur(69px);
+  margin: 0 auto;
+  color: black;
+  border: 1px solid #bf44444d;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1), 0 0 20px rgba(123, 123, 123, 0.1);
+}
+
+form {
+  display: flex;
+}
+
+.request-input {
+  background-color: #efd9d980;
+  /* color: black; */
+  border: none;
+  font-size: 16px;
+  padding: 20px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+input::placeholder {
+  opacity: 0.8;
+  color: rgb(17, 7, 7);
+}
+
+.request-button {
+  padding: 20px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid rgb(191, 69, 68);
+  background-color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(
+    -170deg,
+    rgb(94, 20, 22) 100%,
+    rgba(71, 18, 22, 0.8) 100%,
+    rgba(41, 17, 21, 0.8) 100%
+  );
+  border-radius: 2px;
+  color: #f5eeee;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.generated-answer {
+  background: #936a6b80;
+  color: #f5eeee;
+  margin: 15px 0 15px 0;
+  border: 1px solid #bf44444d;
+  border-radius: 4px;
+  height: 250px;
+  overflow: scroll;
+  isolation: isolate;
+  padding: 10px;
+  text-align: justify;
+}
+
+.details {
+  color: #811b1f;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.details a {
+  color: #efd9d980;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #060606;
+  height: 80px;
+  color: #fbf8f5;
+  text-align: center;
+  font-size: 14px;
+  color: #fbf8f5;
+  margin-top: 23px;
+  z-index: 200;
+}
+
+.footer-text {
+  padding: 17px;
+  line-height: 16px;
+}
+
+footer a {
+  color: #fbf8f5;
+  text-decoration: none;
+}
