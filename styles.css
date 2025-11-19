@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Didact Gothic";
+  height: 100%;
 }
 
 .wrapper {
   background: linear-gradient(#5e1416, #150405);
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -25,7 +30,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/171/455/original/%E2%80%94Pngtree%E2%80%94misty_smoke_abstract_black_mist_8642156.png?1753966085);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   /* top: 1%; */
   /* right: 0; */
@@ -149,7 +154,6 @@ footer {
   justify-content: center;
   text-align: center;
   background-color: #060606;
-  height: 80px;
   color: #fbf8f5;
   text-align: center;
   font-size: 14px;
@@ -227,5 +231,18 @@ footer a {
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .app-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
   }
 }
